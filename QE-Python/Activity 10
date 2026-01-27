@@ -1,0 +1,4 @@
+n1= list(map(int, input().split()))
+for i  in n1:
+    if i%5==0:
+        print(i,end=" ")
