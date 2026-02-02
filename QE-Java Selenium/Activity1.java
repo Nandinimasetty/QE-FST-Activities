@@ -1,0 +1,17 @@
+package demos;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.firefox.FirefoxDriver;
+public class Activity1 {
+    public static void main(String[] args) throws InterruptedException {
+        FirefoxDriver driver=new FirefoxDriver();
+        driver.get("https://training-support.net");
+       
+        driver.findElement(By.linkText("About Us")).click();
+        
+        System.out.println(driver.getTitle());
+        driver.quit();
+        
+    }
+
+}
